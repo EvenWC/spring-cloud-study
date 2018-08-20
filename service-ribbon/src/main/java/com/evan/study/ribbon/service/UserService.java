@@ -15,8 +15,8 @@ public class UserService {
     @Autowired
     private RestTemplate restTemplate;
 
-    public String hello(String name){
-        return restTemplate.getForObject("http://user-service/hello?name="+name,String.class);
+    public String hello(String name) {
+        return restTemplate.getForObject("http://user-service/hello?name=" + name, String.class);
     }
 
 

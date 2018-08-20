@@ -7,12 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-server" />
+        <module name="service-feign" />
         <module name="service-ribbon" />
+        <module name="springboot-jpa" />
         <module name="user-server" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="ribbon-service" target="1.7" />
-    </bytecodeTargetLevel>
   </component>
 </project>

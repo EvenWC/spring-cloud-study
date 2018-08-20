@@ -18,7 +18,7 @@ public class RibbonControl {
     private UserService userService;
 
     @RequestMapping("hello")
-    public String hello(@RequestParam("name") String name){
+    public String hello(@RequestParam("name") String name) {
         return userService.hello(name);
     }
 
