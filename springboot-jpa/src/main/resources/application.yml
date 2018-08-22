@@ -7,7 +7,6 @@ spring:
      # com.zaxxer.hikari.HikariDataSource,
      # org.apache.commons.dbcp.BasicDataSource,
      # org.apache.commons.dbcp2.BasicDataSource
-     #暂时不支持DruidDataSource 因此我们需要通过手动写配置的方式注入DruidDataSource
     type: com.alibaba.druid.pool.DruidDataSource
     name: DataSource-A
     url: jdbc:mysql://47.98.158.193:3306/study?useUnicode=true&amp;characterEncoding=utf8&amp;allowMultiQueries=true&amp;autoReconnect=true;useSSL=true
@@ -49,7 +48,7 @@ spring:
         #hibernate方言配置
         dialect: org.hibernate.dialect.MySQLDialect
     #是否注册OpenEntityManagerInViewInterceptor，绑定JPA EntityManager到请求线程中，默认为: true
-    open-in-view: true
+    open-in-view: false
 
 
 

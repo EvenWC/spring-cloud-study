@@ -35,12 +35,12 @@ public class DataSourceConfig {
     @Value("${druid.stat.filter.urlPatterns}")
     private String urlPatterns;
 
-    @Bean
+   /* @Bean
     @ConfigurationProperties(prefix = "spring.datasource")
     public DataSource druidDataSource(){
         DruidDataSource druidDataSource = new DruidDataSource();
         return druidDataSource;
-    }
+    }*/
 
     @Bean
     public ServletRegistrationBean druidStatViewServlet(){
